@@ -34,7 +34,7 @@ pipeline {
                                 sshTransfer(
                                     sourceFiles:"**/build/libs/*.jar",
                                     remoteDirectory:"",
-//                                     execCommand:"nohup java -jar target/*.jar &"
+                                    execCommand:"nohup java -jar build/lib/*.jar &"
                                 )
                             ]
                         )
